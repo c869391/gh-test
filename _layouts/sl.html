@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    {% if site.feedburner %}
+    <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
+    {% endif %}
+
+  </head>
+  <body>
+    <div class="top">
+      <header>
+        <div class="logo"><a href ="/">Test layout</a></div>
+        <a href="https://github.com/github/teach.github.com/blob/gh-pages/{{page.path}}" class="mini-button"><span>R</span>View it on GitHub</a>
+      </header>
+    </div>
+
+    <div id="content-wrapper">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+hey!
+  </body>
+</html>

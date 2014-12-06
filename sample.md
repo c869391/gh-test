@@ -1,5 +1,6 @@
 ---
 title: Sample page title.
+layout: sl
 ---
 
 # Some title #
