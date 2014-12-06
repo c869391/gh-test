@@ -4,7 +4,7 @@ title: Index page title.
 
 # Some title #
 
-Some text.
+Some text. [Open sample](sample)
 
 ## Subtitle ##
 
