@@ -1,3 +1,7 @@
+---
+title: Index page title.
+---
+
 # Some title #
 
 Some text.
