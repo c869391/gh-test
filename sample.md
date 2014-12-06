@@ -1,3 +1,7 @@
+---
+title: Sample page title.
+---
+
 # Some title #
 
 Some text.
@@ -11,3 +15,4 @@ will be `list`.
 3. Another one
 
 wow
+still md
