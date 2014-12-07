@@ -1,0 +1,6 @@
+title: Overall site title
+
+# standard jekyll configuration
+
+permalink: /articles/:title
+pygments: true
