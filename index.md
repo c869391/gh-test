@@ -25,4 +25,10 @@ public static void Main()
 {% endhighlight %}
 </div>
 
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 hmmm...
