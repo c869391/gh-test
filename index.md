@@ -15,15 +15,15 @@ will be `list`.
 2. Second
 3. Another one
 
-<div>
-{% highlight C# linenos %}
+<a class="k" href="google.com">google</a>
+{% highlight C# %}
 public static void Main()
 {
     var s = "Hello, world!";
 	Console.WriteLine(s); // some comment	
 }
 {% endhighlight %}
-</div>
+
 
 {% highlight ruby linenos %}
 def foo
@@ -31,4 +31,4 @@ def foo
 end
 {% endhighlight %}
 
-hmmmqq...
+hmmmqqww...
