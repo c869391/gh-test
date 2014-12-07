@@ -15,6 +15,7 @@ will be `list`.
 2. Second
 3. Another one
 
+<div>
 {% highlight C# %}
 public static void Main()
 {
@@ -22,3 +23,6 @@ public static void Main()
 	Console.WriteLine(s); // some comment	
 }
 {% endhighlight %}
+</div>
+
+hmmm...
