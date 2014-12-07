@@ -16,7 +16,7 @@ will be `list`.
 3. Another one
 
 <div>
-{% highlight C# %}
+{% highlight C# linenos %}
 public static void Main()
 {
     var s = "Hello, world!";
@@ -25,10 +25,10 @@ public static void Main()
 {% endhighlight %}
 </div>
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def foo
   puts 'foo'
 end
 {% endhighlight %}
 
-hmmm...
+hmmmmmm...
