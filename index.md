@@ -1,6 +1,6 @@
 ---
 title: Index page title.
-layout: default
+layout: sl
 ---
 
 # Some title #
@@ -31,4 +31,4 @@ def foo
 end
 {% endhighlight %}
 
-hmmm...
+hmmmnnn...
