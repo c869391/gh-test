@@ -9,7 +9,7 @@ Some text. [Open sample](sample)
 
 ## Subtitle ##
 
-will be `list`.
+will <span class="k">be</span> `list`.
 
 1. First
 2. Second
