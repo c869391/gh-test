@@ -1,7 +1,7 @@
 title: Overall site title
 
 # standard jekyll configuration
-exclude: [sample.md]
+exclude: [sample]
 
 permalink: /articles/:title
 highlighter: pygments
