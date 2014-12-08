@@ -1,40 +1,25 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+<head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<STYLE type="text/css">
-    
-	hll { background-color: #ffffcc }
-c { color: #008000 }
-err { border: 1px solid #FF0000 }
-k { color: #0000ff } 
-cm { color: #008000 } 
-cp { color: #0000ff } 
-c1 { color: #008000 } 
-cs { color: #008000 }
-ge { font-style: italic } 
-gh { font-weight: bold } 
-gp { font-weight: bold } 
-gs { font-weight: bold } 
-gu { font-weight: bold } 
-</STYLE>
-  </head>
-  <body>
-    <div class="top">
-      <header>
-        <div class="logo"><a href ="/">Test layout</a></div>
-        <a href="https://github.com/github/teach.github.com/blob/gh-pages/{{page.path}}" class="mini-button"><span>R</span>View it on GitHub</a>
-      </header>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div>
+        <header>
+            <div>
+                <a href="/">Home</a>
+                <a href="https://google.com">google.com</a>
+                <a href="noreply@sample.domain.com">noreply@sample.domain.com</a>
+                <a href="https://github.com/c869391/gh-test/">view on github</a>
+            </div>
+        </header>
     </div>
-
-    <div id="content-wrapper">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
+    <div>
+        {{ content }}
     </div>
-hey!
-  </body>
+</body>
 </html>
