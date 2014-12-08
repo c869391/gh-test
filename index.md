@@ -1,5 +1,6 @@
 ---
 title: Index page title.
+layout: sl
 ---
 
 # Some title #
