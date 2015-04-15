@@ -18,6 +18,13 @@
             </div>
         </header>
     </div>
+	<div>
+	{% for p in site.pages %}
+        <li>
+        	<a href="gh-test/{{ p.url }}">{{ p.title }}</a>
+        </li>
+        {% endfor %}
+	</div>
     <div>
         {{ content }}
     </div>
