@@ -2,8 +2,7 @@
 title: Index page title.
 layout: sl
 ---
-
-# Some title #
+# Some title v2 #
 
 Some text. [Open sample](sample)
 
