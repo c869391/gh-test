@@ -3,6 +3,3 @@ title: Overall site title
 # standard jekyll configuration
 exclude: [sample]
 
-permalink: /articles/:title
-highlighter: pygments
-pygments: true
