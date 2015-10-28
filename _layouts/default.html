@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+header {
+    background-color:lightgray;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    background-color:#eeeeee;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:lightgray;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+<body>
+<header>
+<a href="/">Home</a>
+                <a href="https://google.com">google.com</a>
+                <a href="noreply@sample.domain.com">noreply@sample.domain.com</a>
+                <a href="https://github.com/c869391/gh-test/">view on github</a>
+</header>
+<aside>
+<nav>
+{% for p in site.pages %}
+<a href="{{ p.url }}">{{ p.title }}</a><br>
+{{ ((p.path | split:"/") | first }}
+{% endfor %}
+</nav
+
+</aside>
+    <article>
+        {{ content }}
+    </article>
+<footer>
+footer text
+</footer>
+</body>
+</html>
