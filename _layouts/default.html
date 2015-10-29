@@ -41,9 +41,23 @@ footer {
 </header>
 <aside>
 <nav>
-{% for p in site.pages %}
-<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a><br>
-{{ ((p.path | split:"/") | first }}
+{% assign pagesByTitle = site.pages | sort: 'title' %}
+
+{% comment %} pages related to all versions {% endcomment %}
+{% for p in pagesByTitle %}
+	{% assign apiVersionOfPage = (p.path | split:"/") | first %}
+	{% unless site.apiVersions contains apiVersionOfPage %}
+<a href="{{ site.url }}{{ p.url }}">[G] {{ p.title }}</a><br>
+	{% endunless %}
+{% endfor %}
+
+{% for apiVersion in site.apiVersions reversed %}
+	{% for p in pagesByTitle %}
+		{% assign apiVersionOfPage = (p.path | split:"/") | first %}
+		{% if apiVersionOfPage == apiVersion %}
+<a href="{{ site.url }}{{ p.url }}">[{{ apiVersion }}] {{ p.title }}</a><br>
+		{% endif %}
+	{% endfor %}
 {% endfor %}
 </nav
 
