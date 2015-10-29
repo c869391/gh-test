@@ -42,7 +42,7 @@ footer {
 <aside>
 <nav>
 {% for p in site.pages %}
-<a href="{{ p.url }}">{{ p.title }}</a><br>
+<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a><br>
 {{ ((p.path | split:"/") | first }}
 {% endfor %}
 </nav
