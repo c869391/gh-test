@@ -47,7 +47,7 @@ footer {
 {% for p in pagesByTitle %}
 	{% assign apiVersionOfPage = (p.path | split:"/") | first %}
 	{% unless site.apiVersions contains apiVersionOfPage %}
-<a href="{{ site.url }}{{ p.url }}">[G] {{ p.title }}</a><br>
+<a href="{{ site.baseurl }}{{ p.url }}">[G] {{ p.title }}</a><br>
 	{% endunless %}
 {% endfor %}
 
@@ -55,7 +55,7 @@ footer {
 	{% for p in pagesByTitle %}
 		{% assign apiVersionOfPage = (p.path | split:"/") | first %}
 		{% if apiVersionOfPage == apiVersion %}
-<a href="{{ site.url }}{{ p.url }}">[{{ apiVersion }}] {{ p.title }}</a><br>
+<a href="{{ site.baseurl }}{{ p.url }}">[{{ apiVersion }}] {{ p.title }}</a><br>
 		{% endif %}
 	{% endfor %}
 {% endfor %}
